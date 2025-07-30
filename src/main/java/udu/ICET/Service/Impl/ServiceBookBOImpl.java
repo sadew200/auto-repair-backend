@@ -25,4 +25,9 @@ public class ServiceBookBOImpl implements ServiceBookBO {
     public List<ServiceEntity> getService() {
         return serviceBookRepository.findAll();
     }
+
+    @Override
+    public void deleteService(Integer serviceID) {
+        serviceBookRepository.deleteById(serviceID);
+    }
 }

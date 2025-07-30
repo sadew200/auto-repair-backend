@@ -25,4 +25,9 @@ public class ServiceBookController {
     public List<ServiceEntity> PreviousService(){
         return serviceBookBO.getService();
     }
+
+    @GetMapping("/DeleteService/{serviceID}")
+    public void bookService(@PathVariable  Integer serviceID){
+        serviceBookBO.deleteService(serviceID);
+    }
 }

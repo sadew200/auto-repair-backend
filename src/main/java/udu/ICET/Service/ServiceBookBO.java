@@ -9,4 +9,6 @@ public interface ServiceBookBO {
     void addService(Service service);
 
     List<ServiceEntity> getService();
+
+    void deleteService(Integer serviceID);
 }
